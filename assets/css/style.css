@@ -26,3 +26,42 @@ h2 {
     float: left;
     font-size: 280%;
 }
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+#menu a::before {
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left:0;
+    position: absolute;
+    border-bottom: solid 2px black;
+    transform-origin: 0% 100%;
+    transition: 0.1s ease-in;
+}
+
+#menu a:hover::before {
+    width: 100%;
+
+}
